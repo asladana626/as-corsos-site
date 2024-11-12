@@ -9,6 +9,9 @@ export default {
         sans: ["var(--font-inter)"],
       },
     },
+    screens: {
+      'laptop': '1024px',
+    },
   },
   future: {
     hoverOnlyWhenSupported: true,
