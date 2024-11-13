@@ -1,6 +1,5 @@
 import type { Config } from "tailwindcss";
 import typography from "@tailwindcss/typography";
-import { League_Spartan, Montserrat } from 'next/font/google';
 
 export default {
   content: ["./app/**/*.{ts,tsx}", "./sanity/**/*.{ts,tsx}"],

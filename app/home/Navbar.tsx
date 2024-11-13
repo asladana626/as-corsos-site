@@ -55,7 +55,7 @@ export function Navbar() {
           <a>Recommended Supplements</a>
           <div className='flex items-center justify-between'>
             <a className='mr-1'>For Sale</a>
-            <IoMdArrowDropdown />
+            {/* <IoMdArrowDropdown /> */}
           </div>
           <a>History</a>
           <a>Studs</a>
@@ -63,7 +63,7 @@ export function Navbar() {
           <a>FAQ</a>
           <div className='flex items-center justify-between'>
             <a className='mr-1'>Testimonials/Past Clients</a>
-            <IoMdArrowDropdown />
+            {/* <IoMdArrowDropdown /> */}
           </div>
           <a>Media</a>
         </div>
@@ -88,7 +88,7 @@ export function Navbar() {
             <div className='flex items-center'>
               <a className='mr-1'>For Sale</a>
               <div className='text-[20px]'>
-                <IoMdArrowDropdown />
+                {/* <IoMdArrowDropdown /> */}
               </div>
             </div>
           </li>
@@ -108,7 +108,7 @@ export function Navbar() {
             <div className='flex items-center'>
               <a className='mr-1'>Testimonials/Past Clients</a>
               <div className='text-[20px]'>
-                <IoMdArrowDropdown />
+                {/* <IoMdArrowDropdown /> */}
               </div>
             </div>
           </li>
