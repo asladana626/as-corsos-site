@@ -7,7 +7,12 @@ export default {
     extend: {
       fontFamily: {
         sans: ["var(--font-inter)"],
+        'heading': ['"League Spartan"', 'sans-serif'],
+        'body': ['Montserrat', 'sans-serif'],
       },
+    },
+    screens: {
+      'laptop': '1024px',
     },
   },
   future: {
