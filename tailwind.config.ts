@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import typography from "@tailwindcss/typography";
+import { League_Spartan, Montserrat } from 'next/font/google';
 
 export default {
   content: ["./app/**/*.{ts,tsx}", "./sanity/**/*.{ts,tsx}"],
@@ -7,6 +8,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ["var(--font-inter)"],
+        'heading': ['"League Spartan"', 'sans-serif'],
+        'body': ['Montserrat', 'sans-serif'],
       },
     },
     screens: {

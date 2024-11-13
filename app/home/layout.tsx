@@ -8,7 +8,7 @@ export default async function RootLayout({children}: {children: React.ReactNode}
     <html lang='en'>
       <body>
         <Navbar />
-        <main className='pt-[100px]'>{children}</main>
+        <main className='pt-[100px] '>{children}</main>
       </body>
     </html>
   )
