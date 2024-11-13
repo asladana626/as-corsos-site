@@ -1,20 +1,23 @@
 "use client";
 
-import Image from 'next/image';
-
 type HeroProps = {
   imageUrl: string;
   imagePos: string;
-  imageAlt?: string;
+  mobileHeight: number;
+  tabletHeight?: number;
+  laptopHeight?: number;
 }
-export function HeroBanner({imageUrl, imagePos, imageAlt}: HeroProps) {
-  
+export function HeroBanner({imageUrl, imagePos, mobileHeight, tabletHeight, laptopHeight}: HeroProps) {
+  let divClassName = 'bg-cover';
+  divClassName += ' bg-[url("' + imageUrl + '")]';
+  divClassName += ' h-[' + mobileHeight + 'px]';
+  divClassName += tabletHeight ? ' tablet:h-[' + tabletHeight + 'px]' : '';
+  divClassName += laptopHeight ? ' laptop:h-[' + laptopHeight + 'px]' : '';
+  divClassName += ' bg-' + imagePos;
+
   return (
-    <Image
-      src={imageUrl}
-      alt={imageAlt ? imageAlt : ''}
-      width={2106}
-      height={1424}
-    />
+    <>
+      <div className={divClassName}></div>
+    </>
   )
 }
