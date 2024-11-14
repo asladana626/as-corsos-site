@@ -12,7 +12,17 @@ export default {
       },
     },
     screens: {
+      'mobile': '375px', 
+
+      'sm': '640px',
+
+      'tablet': '768px',
+
       'laptop': '1024px',
+
+      'xl': '1280px',
+
+      '2xl': '1536px',
     },
   },
   future: {

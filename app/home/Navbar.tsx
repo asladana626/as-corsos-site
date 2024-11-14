@@ -27,7 +27,7 @@ export function Navbar() {
     setMenuIsOpen(!menuIsOpen);
   }
 
-  let navbarClassName = 'p-2 fixed w-full h-[100px] flex items-center justify-between text-white transition-[background-color] duration-150 ease-in ';
+  let navbarClassName = 'p-2 fixed w-full min-w-[375px] h-[100px] flex items-center justify-between text-white transition-[background-color] duration-150 ease-in ';
   navbarClassName += scrollPosition === 0 ? 'bg-[#333]' : 'bg-[#333333a0]';
 
   let dropdownClassName = 'fixed top-[100px] w-full bg-white laptop:hidden ';
@@ -39,11 +39,11 @@ export function Navbar() {
       <div className={navbarClassName}>
         {/* Title */}
         <div>
-          <a href='/home' className='text-[38px] ml-10 font-heading'>Alpha Sierra Corsos</a>
+          <a href='/home' className='text-[38px] sm:ml-10 font-heading'>Alpha Sierra Corsos</a>
         </div>
 
         {/* Menu button for mobile and tablet */}
-        <div onClick={handleMenuToggle} className='laptop:hidden cursor-pointer bg-white text-black text-[32px] rounded w-8 h-9 mr-4 flex items-center justify-center'>
+        <div onClick={handleMenuToggle} className='laptop:hidden cursor-pointer bg-white text-black text-[32px] rounded w-8 h-9 sm:mr-4 flex items-center justify-center'>
           {menuIsOpen ? <FaXmark /> : <HiMenu />}
         </div>
 
