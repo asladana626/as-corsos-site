@@ -6,7 +6,7 @@ import { HeroBanner } from "./HeroBanner";
 export default async function Page() {
   return (
     <div className='pb-[30px] font-body'>
-      <HeroBanner imageUrl="/corso-1.jpg" imagePos='right' mobileHeight={300} tabletHeight={500} />
+      <HeroBanner image="corso-1" imageFill='cover' imagePos='right' mobileHeight={300} tabletHeight={500} laptopHeight={900} />
       <div className='flex max-w-[1265px] mx-auto'>
         <div className='basis-1/2'>
           <BigLink title='Link' subtitle='see all' path='' />
@@ -65,7 +65,23 @@ export default async function Page() {
           nostra laoreet taciti. Himenaeos maximus in cubilia habitant, at feugiat sed.
         </p>
       </div>
-    </div>
 
+      <div className='px-3 mt-4 max-w-[1265px] mx-auto'>
+        <HeroBanner image='corso-2' imageFill='contain' imagePos='right' mobileHeight={300} tabletHeight={500} >
+          <div className='pl-8 h-full flex flex-col justify-center'>
+            <h1 className='font-heading text-[30px] laptop:text-[50px]'>Hello!</h1>
+            <p className='max-w-[50%] laptop:max-w-[75%] mb-3 laptop:text-[24px]'>
+              Lorem ipsum odor amet, consectetuer adipiscing elit. Tellus scelerisque donec purus dui facilisi. 
+            </p>
+            <p className='hidden tablet:block max-w-[50%] laptop:max-w-[75%] mb-3 laptop:text-[24px]'>
+              Id odio torquent dis tortor eros euismod. Ornare pellentesque himenaeos quisque facilisi tincidunt.
+            </p>
+            <Button color='black' text='Learn more' path='/home' />
+          </div>
+        </HeroBanner>
+      </div>
+
+      {/* page close div */}
+    </div>
   )
 }
