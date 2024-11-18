@@ -12,7 +12,7 @@ type HeroProps = {
   laptopHeight?: number;
 }
 export function HeroBanner({children, image, imageFill, imagePos, mobileHeight, tabletHeight, laptopHeight}: HeroProps) {
-  let divClassName = 'bg-no-repeat bg-cover';
+  let divClassName = 'bg-no-repeat';
 
   /**
    * I initially had more dynamic creation of tailwind classes but that caused rendering errors
