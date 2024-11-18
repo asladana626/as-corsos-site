@@ -5,6 +5,7 @@ import { HiMenu } from "react-icons/hi";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { FaXmark } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
+import { NavLinks } from "../NavLinks/NavLinks";
 
 export function Navbar() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -48,75 +49,19 @@ export function Navbar() {
         </div>
 
         {/* Menu links for desktop */}
-        <div className='hidden laptop:flex basis-3/5 mr-10 flex-wrap justify-center space-x-5 font-body [&>*]:mb-2 pt-2 [&>*]:cursor-pointer'>
-          <a href='/home' className={(pathname === '/home' ? 'text-yellow-500' : '')}>Home</a>
-          <a>About</a>
-          <a>Wait List</a>
-          <a>Recommended Supplements</a>
-          <div className='flex items-center justify-between'>
-            <a className='mr-1'>For Sale</a>
-            {/* <IoMdArrowDropdown /> */}
-          </div>
-          <a>History</a>
-          <a>Studs</a>
-          <a>Females</a>
-          <a>FAQ</a>
-          <div className='flex items-center justify-between'>
-            <a className='mr-1'>Testimonials/Past Clients</a>
-            {/* <IoMdArrowDropdown /> */}
-          </div>
-          <a>Media</a>
-        </div>
+        <nav className='basis-3/5 font-body pt-2 mr-10 '>
+          <ul className='hidden laptop:flex flex-wrap justify-center space-x-5 [&>*]:mb-2 [&>*]:cursor-pointer'>
+            <NavLinks />
+          </ul>
+         </nav>
       </div>
 
       {/* Menu Dropdown */}
-      <div className={dropdownClassName}>
+      <nav className={dropdownClassName}>
         <ul className='text-[16px] font-body font-medium [&>*]:px-8 [&>*]:py-[8px]'>
-          <li className={(pathname === '/home' ? 'bg-[#3f444a] text-white' : '')}>
-            <a>Home</a>
-          </li>
-          <li>
-            <a>About</a>
-          </li>
-          <li>
-            <a>Wait List</a>
-          </li>
-          <li>
-            <a>Recommended Supplements</a>
-          </li>
-          <li>
-            <div className='flex items-center'>
-              <a className='mr-1'>For Sale</a>
-              <div className='text-[20px]'>
-                {/* <IoMdArrowDropdown /> */}
-              </div>
-            </div>
-          </li>
-          <li>
-            <a>History</a>
-          </li>
-          <li>
-            <a>Studs</a>
-          </li>
-          <li>
-            <a>Females</a>
-          </li>
-          <li>
-            <a>FAQ</a>
-          </li>
-          <li>
-            <div className='flex items-center'>
-              <a className='mr-1'>Testimonials/Past Clients</a>
-              <div className='text-[20px]'>
-                {/* <IoMdArrowDropdown /> */}
-              </div>
-            </div>
-          </li>
-          <li>
-            <a>Media</a>
-          </li>
+          <NavLinks />
         </ul>
-      </div>
+      </nav>
     </>
   )
 }
