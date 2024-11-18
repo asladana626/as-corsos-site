@@ -1,6 +1,6 @@
-import { BigLink } from "./BigLink";
-import { Button } from "./Button";
-import { HeroBanner } from "./HeroBanner";
+import { BigLink } from "../components/BigLink/BigLink";
+import { Button } from "../components/Button/Button";
+import { HeroBanner } from "../components/HeroBanner/HeroBanner";
 
 // Home Page
 export default async function Page() {

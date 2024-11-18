@@ -1,6 +1,6 @@
 import '../globals.css';
 
-import { Navbar } from "./Navbar";
+import { Navbar } from "../components/Navbar/Navbar";
 
 export default async function RootLayout({children}: {children: React.ReactNode}) {
 
