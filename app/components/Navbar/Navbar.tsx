@@ -58,10 +58,12 @@ export function Navbar() {
 
       {/* Menu Dropdown */}
       <nav className={dropdownClassName}>
-        <ul className='text-[16px] font-body font-medium [&>*]:px-8 [&>*]:py-[8px]'>
+        <ul className='text-[1rem] font-body font-medium [&>li>*]:block [&>li>*]:px-8 [&>li>*]:py-2' onClick={handleMenuToggle}>
           <NavLinks type='gray' />
         </ul>
       </nav>
     </>
   )
 }
+
+// 

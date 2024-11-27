@@ -7,10 +7,10 @@ export function Footer() {
   return (
     <div className='font-body bg-[#333] text-gray-400 py-12'>
       <div className='tablet:flex tablet:justify-between max-w-[1000px] mx-auto'>
-        <h1 className='font-heading text-center text-[50px] mb-[70px] text-white px-[50px] whitespace-nowrap leading-[42px]'>
+        <h1 className='font-heading text-center text-[3.125rem] mb-[70px] text-white px-[50px] whitespace-nowrap leading-[42px]'>
           Alpha Sierra
           <br />
-          <span className='text-[40px]'>Corsos</span>
+          <span className='text-[2.5rem]'>Corsos</span>
         </h1>
         <div className='pl-8 space-y-4 mb-4'>
           <p>

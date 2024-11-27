@@ -1,6 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { usePathname } from "next/navigation"
+import { useCallback } from "react";
 
 type NavLinksProps = {
   type: string;
@@ -8,52 +10,52 @@ type NavLinksProps = {
 export function NavLinks({type}: NavLinksProps) {
   const pathname = usePathname();
   
-  const highlightClass = type === 'yellow' ? 'text-yellow-400' : 'bg-[#3f444a] text-white'
+  const highlightClass = type === 'yellow' ? 'text-yellow-400' : 'bg-[#3f444a] text-white';
 
   return (
     <>
       <li className={(pathname === '/home' ? highlightClass : '')}>
-        <a href='/home'>Home</a>
+        <Link href='/home'>Home</Link>
       </li>
       <li className={(pathname === '/home/about_us' ? highlightClass : '')}>
-        <a href='/home/about_us'>About</a>
+        <Link href='/home/about_us'>About</Link>
       </li>
       <li>
-        <a>Wait List</a>
+        <Link href='/home'>Wait List</Link>
       </li>
       <li>
-        <a>Recommended Supplements</a>
+        <Link href='/home'>Recommended Supplements</Link>
       </li>
       <li>
         <div className='flex items-center'>
-          <a className='mr-1'>For Sale</a>
-          <div className='text-[20px]'>
+          <Link href='/home' className='mr-1'>For Sale</Link>
+          <div className='text-[1.25rem]'>
             {/* <IoMdArrowDropdown /> */}
           </div>
         </div>
       </li>
       <li>
-        <a>History</a>
+        <Link href='/home'>History</Link>
       </li>
       <li>
-        <a>Studs</a>
+        <Link href='/home'>Studs</Link>
       </li>
       <li>
-        <a>Females</a>
+        <Link href='/home'>Females</Link>
       </li>
       <li>
-        <a>FAQ</a>
+        <Link href='/home'>FAQ</Link>
       </li>
       <li>
         <div className='flex items-center'>
-          <a className='mr-1'>Testimonials/Past Clients</a>
-          <div className='text-[20px]'>
+          <Link href='/home' className='mr-1'>Testimonials/Past Clients</Link>
+          <div className='text-[1.25rem]'>
             {/* <IoMdArrowDropdown /> */}
           </div>
         </div>
       </li>
       <li>
-        <a>Media</a>
+        <Link href='/home'>Media</Link>
       </li>
     </>
   )
