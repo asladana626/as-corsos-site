@@ -5,8 +5,8 @@ import { ReactNode } from "react";
 type HeroProps = {
   children?: ReactNode,
   image: string;
-  imageFill: string,
-  imagePos: string;
+  imageFill?: string,
+  imagePos?: string;
   mobileHeight: number;
   tabletHeight?: number;
   laptopHeight?: number;
@@ -27,6 +27,9 @@ export function HeroBanner({children, image, imageFill, imagePos, mobileHeight, 
       break;
     case 'corso-family-1':
       divClassName += ' bg-[url("/corso-family-1.jpg")]';
+      break;
+    case 'corso-gifts-1':
+      divClassName += ' bg-[url("/corso-gifts-1.jpg")]';
       break;
   }
 
@@ -50,6 +53,12 @@ export function HeroBanner({children, image, imageFill, imagePos, mobileHeight, 
   }
   
   switch (mobileHeight) {
+    case 0:   // I'm using this for testing
+      divClassName += ' h-[225px]'
+      break;
+    case 275:
+      divClassName += ' h-[275px]'
+      break;
     case 275:
       divClassName += ' h-[275px]';
       break;
@@ -61,6 +70,12 @@ export function HeroBanner({children, image, imageFill, imagePos, mobileHeight, 
   }
 
   switch (tabletHeight) {
+    case 0:   // I'm using this for testing
+      divClassName += ' tablet:h-[325px]'
+      break;
+    case 325:
+      divClassName += ' tablet:h-[325px]'
+      break;
     case 500:
       divClassName += ' tablet:h-[500px]';
       break;
@@ -69,6 +84,12 @@ export function HeroBanner({children, image, imageFill, imagePos, mobileHeight, 
   }
 
   switch (laptopHeight) {
+    case 0:   // I'm using this for testing
+      divClassName += ' laptop:h-[600px]';
+      break;
+    case 600:
+      divClassName += ' laptop:h-[600px]';
+      break;
     case 800:
       divClassName += ' laptop:h-[800px]';
       break;

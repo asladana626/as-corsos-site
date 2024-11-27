@@ -2,16 +2,21 @@
 
 import { usePathname } from "next/navigation"
 
-export function NavLinks() {
+type NavLinksProps = {
+  type: string;
+}
+export function NavLinks({type}: NavLinksProps) {
   const pathname = usePathname();
   
+  const highlightClass = type === 'yellow' ? 'text-yellow-400' : 'bg-[#3f444a] text-white'
+
   return (
     <>
-      <li className={(pathname === '/home' ? 'text-yellow-400' : '')}>
-        <a>Home</a>
+      <li className={(pathname === '/home' ? highlightClass : '')}>
+        <a href='/home'>Home</a>
       </li>
-      <li>
-        <a>About</a>
+      <li className={(pathname === '/home/about_us' ? highlightClass : '')}>
+        <a href='/home/about_us'>About</a>
       </li>
       <li>
         <a>Wait List</a>
