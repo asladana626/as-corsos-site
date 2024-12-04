@@ -5,9 +5,9 @@ import { HeroBanner } from "@/app/components/HeroBanner/HeroBanner";
 export default async function Page() {
   return (
     <>
-      <HeroBanner image='corso-family-1' imageFill='cover' mobileHeight={275} tabletHeight={325} laptopHeight={600}>
+      <HeroBanner image='corso-woods-1' imageFill='cover' imagePos='top' mobileHeight={275} tabletHeight={325} laptopHeight={600}>
         <div className='bg-[#3333337c] h-full pt-5 pl-3 laptop:pl-[3rem] laptop:pt-[4rem]'>
-          <h1 className='font-heading text-white text-[3rem] laptop:text-[4rem]'>About the Breed</h1>
+          <h1 className='font-heading text-white text-[3rem] laptop:text-[4rem]'>About the <br /> Breed</h1>
         </div>
       </HeroBanner>
       <div className='font-body space-y-3 mx-10'>

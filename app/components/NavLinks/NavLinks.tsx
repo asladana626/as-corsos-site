@@ -33,7 +33,7 @@ export function NavLinks({type}: NavLinksProps) {
         <Link href='/home'>Available</Link>
       </li>
       <li>
-        <Link href='/home'>Testimonials</Link>
+        <Link href='/home/testimonials'>Testimonials</Link>
       </li>
       <li>
         <Link href='/home'>FAQ</Link>
