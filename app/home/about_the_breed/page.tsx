@@ -5,13 +5,13 @@ import { HeroBanner } from "@/app/components/HeroBanner/HeroBanner";
 export default async function Page() {
   return (
     <>
-      <HeroBanner image='corso-gifts-1' imageFill='cover' mobileHeight={275} tabletHeight={325} laptopHeight={600}>
+      <HeroBanner image='corso-family-1' imageFill='cover' mobileHeight={275} tabletHeight={325} laptopHeight={600}>
         <div className='bg-[#3333337c] h-full pt-5 pl-3 laptop:pl-[3rem] laptop:pt-[4rem]'>
-          <h1 className='font-heading text-white text-[3rem] laptop:text-[4rem]'>About Us</h1>
+          <h1 className='font-heading text-white text-[3rem] laptop:text-[4rem]'>About the Breed</h1>
         </div>
       </HeroBanner>
       <div className='font-body space-y-3 mx-10'>
-        <h1 className='font-heading text-[3rem] mt-10'>Who We Are</h1>
+        <h1 className='font-heading text-[3rem] mt-10'>The Cane Corso</h1>
         <p>
           Lorem ipsum odor amet, consectetuer adipiscing elit. Nibh adipiscing litora; odio auctor litora ligula. Aliquam semper purus donec nascetur sapien. Cursus eros lectus massa vivamus quis semper hac. Et vulputate primis aliquet class quis. Habitasse felis metus pretium litora dis mollis imperdiet curabitur.
         </p>

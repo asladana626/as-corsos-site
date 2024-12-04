@@ -21,7 +21,7 @@ export function NavLinks({type}: NavLinksProps) {
         <Link href='/home/about_us'>About Us</Link>
       </li>
       <li>
-        <Link href='/home'>About the Breed</Link>
+        <Link href='/home/about_the_breed'>About the Breed</Link>
       </li>
       <li>
         <Link href='/home'>Contact Us</Link>
