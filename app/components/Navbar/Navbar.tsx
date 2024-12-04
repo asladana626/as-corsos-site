@@ -49,7 +49,7 @@ export function Navbar() {
         </div>
 
         {/* Menu links for desktop */}
-        <nav className='hidden laptop:block basis-3/5 font-body pt-2 mr-10 '>
+        <nav className='hidden laptop:block basis-1/2 font-body pt-2 mr-10 '>
           <ul className='flex flex-wrap justify-center space-x-5 [&>*]:mb-2 [&>*]:cursor-pointer'>
             <NavLinks type="yellow" />
           </ul>
