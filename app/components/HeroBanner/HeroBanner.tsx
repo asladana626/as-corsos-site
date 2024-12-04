@@ -31,6 +31,9 @@ export function HeroBanner({children, image, imageFill, imagePos, mobileHeight, 
     case 'corso-gifts-1':
       divClassName += ' bg-[url("/corso-gifts-1.jpg")]';
       break;
+    case 'corso-woods-1':
+      divClassName += ' bg-[url("/corso-woods-1.jpg")]';
+      break;
   }
 
   switch (imageFill) {
@@ -47,6 +50,9 @@ export function HeroBanner({children, image, imageFill, imagePos, mobileHeight, 
   switch (imagePos) {
     case 'right':
       divClassName += ' bg-right';
+      break;
+    case 'top':
+      divClassName += ' bg-top';
       break;
     default:
       divClassName += ' bg-center';
