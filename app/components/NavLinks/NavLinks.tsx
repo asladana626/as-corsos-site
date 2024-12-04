@@ -1,54 +1,42 @@
 "use client";
 
+import Link from "next/link";
 import { usePathname } from "next/navigation"
+import { useCallback } from "react";
 
-export function NavLinks() {
+type NavLinksProps = {
+  type: string;
+}
+export function NavLinks({type}: NavLinksProps) {
   const pathname = usePathname();
   
+  const highlightClass = type === 'yellow' ? 'text-yellow-400' : 'bg-[#3f444a] text-white';
+
   return (
     <>
-      <li className={(pathname === '/home' ? 'text-yellow-400' : '')}>
-        <a>Home</a>
+      <li className={(pathname === '/home' ? highlightClass : '')}>
+        <Link href='/home'>Home</Link>
+      </li>
+      <li className={(pathname === '/home/about_us' ? highlightClass : '')}>
+        <Link href='/home/about_us'>About Us</Link>
       </li>
       <li>
-        <a>About</a>
+        <Link href='/home'>About the Breed</Link>
       </li>
       <li>
-        <a>Wait List</a>
+        <Link href='/home'>Contact Us</Link>
       </li>
       <li>
-        <a>Recommended Supplements</a>
+        <Link href='/home'>Wait List</Link>
       </li>
       <li>
-        <div className='flex items-center'>
-          <a className='mr-1'>For Sale</a>
-          <div className='text-[20px]'>
-            {/* <IoMdArrowDropdown /> */}
-          </div>
-        </div>
+        <Link href='/home'>Available</Link>
       </li>
       <li>
-        <a>History</a>
+        <Link href='/home'>Testimonials</Link>
       </li>
       <li>
-        <a>Studs</a>
-      </li>
-      <li>
-        <a>Females</a>
-      </li>
-      <li>
-        <a>FAQ</a>
-      </li>
-      <li>
-        <div className='flex items-center'>
-          <a className='mr-1'>Testimonials/Past Clients</a>
-          <div className='text-[20px]'>
-            {/* <IoMdArrowDropdown /> */}
-          </div>
-        </div>
-      </li>
-      <li>
-        <a>Media</a>
+        <Link href='/home'>FAQ</Link>
       </li>
     </>
   )

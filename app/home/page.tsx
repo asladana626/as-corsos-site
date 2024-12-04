@@ -19,7 +19,7 @@ export default async function Page() {
         </div>
 
         {/* Welcoming Paragraphs */}
-        <div className='px-3 [&>*]:mt-[15px] max-w-[1265px] mx-auto text-[18px] font-medium text-gray-700 [&>h1]:font-heading [&>h1]:text-[24px] [&>h1]:font-bold'>
+        <div className='px-3 [&>*]:mt-[15px] max-w-[1265px] mx-auto text-[1.125rem] font-medium text-gray-700 [&>h1]:font-heading [&>h1]:text-[1.5rem] [&>h1]:font-bold'>
           <p>
             Welcome to Alpha Sierra Corsos!
           </p>
@@ -71,11 +71,11 @@ export default async function Page() {
         <div className='px-3 mt-4 max-w-[1265px] mx-auto'>
           <HeroBanner image='corso-2' imageFill='contain' imagePos='right' mobileHeight={300} tabletHeight={500} >
             <div className='pl-8 h-full flex flex-col justify-center'>
-              <h1 className='font-heading text-[30px] laptop:text-[50px]'>Hello!</h1>
-              <p className='max-w-[50%] laptop:max-w-[75%] mb-3 laptop:text-[24px]'>
+              <h1 className='font-heading text-[1.875rem] laptop:text-[3.125rem]'>Hello!</h1>
+              <p className='max-w-[50%] laptop:max-w-[75%] mb-3 laptop:text-[1.5rem]'>
                 Lorem ipsum odor amet, consectetuer adipiscing elit. Tellus scelerisque donec purus dui facilisi. 
               </p>
-              <p className='hidden tablet:block max-w-[50%] laptop:max-w-[75%] mb-3 laptop:text-[24px]'>
+              <p className='hidden tablet:block max-w-[50%] laptop:max-w-[75%] mb-3 laptop:text-[1.5rem]'>
                 Id odio torquent dis tortor eros euismod. Ornare pellentesque himenaeos quisque facilisi tincidunt.
               </p>
               <Button color='black' text='Learn more' path='/home' />

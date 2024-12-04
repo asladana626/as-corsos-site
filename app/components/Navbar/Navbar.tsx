@@ -49,19 +49,21 @@ export function Navbar() {
         </div>
 
         {/* Menu links for desktop */}
-        <nav className='basis-3/5 font-body pt-2 mr-10 '>
-          <ul className='hidden laptop:flex flex-wrap justify-center space-x-5 [&>*]:mb-2 [&>*]:cursor-pointer'>
-            <NavLinks />
+        <nav className='hidden laptop:block basis-1/2 font-body pt-2 mr-10 '>
+          <ul className='flex flex-wrap justify-center space-x-5 [&>*]:mb-2 [&>*]:cursor-pointer'>
+            <NavLinks type="yellow" />
           </ul>
          </nav>
       </div>
 
       {/* Menu Dropdown */}
       <nav className={dropdownClassName}>
-        <ul className='text-[16px] font-body font-medium [&>*]:px-8 [&>*]:py-[8px]'>
-          <NavLinks />
+        <ul className='text-[1rem] font-body font-medium [&>li>*]:block [&>li>*]:px-8 [&>li>*]:py-2' onClick={handleMenuToggle}>
+          <NavLinks type='gray' />
         </ul>
       </nav>
     </>
   )
 }
+
+// 
