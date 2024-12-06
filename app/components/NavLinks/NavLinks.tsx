@@ -20,22 +20,22 @@ export function NavLinks({type}: NavLinksProps) {
       <li className={(pathname === '/home/about_us' ? highlightClass : '')}>
         <Link href='/home/about_us'>About Us</Link>
       </li>
-      <li>
+      <li className={(pathname === '/home/about_the_breed' ? highlightClass : '')}>
         <Link href='/home/about_the_breed'>About the Breed</Link>
       </li>
-      <li>
+      <li className={(pathname === '/home/contact_us' ? highlightClass : '')}>
         <Link href='/home'>Contact Us</Link>
       </li>
-      <li>
-        <Link href='/home'>Wait List</Link>
+      <li className={(pathname === '/home/waitlist' ? highlightClass : '')}>
+        <Link href='/home/waitlist'>Wait List</Link>
       </li>
-      <li>
+      <li className={(pathname === '/home/available' ? highlightClass : '')}>
         <Link href='/home'>Available</Link>
       </li>
-      <li>
+      <li className={(pathname === '/home/testimonials' ? highlightClass : '')}>
         <Link href='/home/testimonials'>Testimonials</Link>
       </li>
-      <li>
+      <li className={(pathname === '/home/faq' ? highlightClass : '')}>
         <Link href='/home'>FAQ</Link>
       </li>
     </>
