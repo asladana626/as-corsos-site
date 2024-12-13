@@ -13,7 +13,7 @@ export default async function Page() {
         </div>
       </HeroBanner>
       <div className='font-body space-y-3 mx-10'>
-        <h1 className='font-heading text-[3rem] mt-10'>Let's Chat!</h1>
+        <h1 className='font-heading text-[3rem] mt-10'>Let&apos;s Chat!</h1>
         <ContactForm />
       </div>
       
