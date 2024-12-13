@@ -1,14 +1,9 @@
 import { Button } from "@/app/components/Button/Button";
+import { ContactForm } from "@/app/components/ContactForm/ContactForm";
 import { Footer } from "@/app/components/Footer/Footer";
 import { HeroBanner } from "@/app/components/HeroBanner/HeroBanner";
-import emailjs from 'emailjs-com';
 
 export default async function Page() {
-  function sendEmail(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-
-    // emailjs.sendForm('service_fuzez5h', 'template_lcnwbhk', e.target, 'Y3Ds21IYgk49GXNBR')
-  }
   
   return (
     <>
@@ -19,32 +14,7 @@ export default async function Page() {
       </HeroBanner>
       <div className='font-body space-y-3 mx-10'>
         <h1 className='font-heading text-[3rem] mt-10'>Let's Chat!</h1>
-        <form onSubmit={sendEmail}>
-          <label>
-            Name <span className='text-red-500'>*</span>
-            <div>
-              <input required type='text' className='border-2 rounded w-[75%] mb-5' />
-            </div>
-          </label>
-
-          <label>
-            Email <span className='text-red-500'>*</span>
-            <div>
-              <input required type='email' className='border-2 rounded w-[75%] mb-5' />
-            </div>
-          </label>
-
-          <label>
-            Message <span className='text-red-500'>*</span>
-            <div>
-              <textarea required className='border-2 rounded w-[75%] h-[100px] mb-5' />
-            </div>
-          </label>
-
-          <div className='w-[75%] flex justify-end'>
-            <button className='border bg-gray-300 px-3 py-1 rounded-md'>Send!</button>
-          </div>
-        </form>
+        <ContactForm />
       </div>
       
       <HeroBanner image='corso-2' imageFill='contain' imagePos='right' mobileHeight={300} tabletHeight={500} >
