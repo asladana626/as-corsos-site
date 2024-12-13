@@ -24,7 +24,7 @@ export function NavLinks({type}: NavLinksProps) {
         <Link href='/home/about_the_breed'>About the Breed</Link>
       </li>
       <li className={(pathname === '/home/contact_us' ? highlightClass : '') + hoverClass}>
-        <Link href='/home'>Contact Us</Link>
+        <Link href='/home/contact_us'>Contact Us</Link>
       </li>
       <li className={(pathname === '/home/waitlist' ? highlightClass : '') + hoverClass}>
         <Link href='/home/waitlist'>Wait List</Link>
