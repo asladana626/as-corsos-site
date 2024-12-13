@@ -36,7 +36,7 @@ export function NavLinks({type}: NavLinksProps) {
         <Link href='/home/testimonials'>Testimonials</Link>
       </li>
       <li className={(pathname === '/home/faq' ? highlightClass : '') + hoverClass}>
-        <Link href='/home'>FAQ</Link>
+        <Link href='/home/faq'>FAQ</Link>
       </li>
     </>
   )
